@@ -1,6 +1,3 @@
-# Install homebrew:
-# ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 # Invoke this file by doing: brew bundle Caskfile
 
 # brew formulae:
@@ -11,6 +8,7 @@ install openssl
 install rbenv
 install rbenv-gem-rehash
 install ruby-build
+install git
 
 # Install Cask - http://caskroom.io
 install caskroom/cask/brew-cask
