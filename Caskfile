@@ -1,0 +1,40 @@
+# Install homebrew:
+# ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Invoke this file by doing: brew bundle Caskfile
+
+# brew formulae:
+install wget
+install node
+install maven
+install openssl
+install rbenv
+install rbenv-gem-rehash
+install ruby-build
+
+# Install Cask - http://caskroom.io
+install caskroom/cask/brew-cask
+
+# Virtualization
+cask install vagrant
+cask install virtualbox
+
+# Applications
+cask install google-chrome
+cask install iterm2
+cask install vlc
+cask install firefox
+cask install sublime-text
+cask install adium
+cask install remote-desktop-connection
+cask install darktable
+cask install dropbox
+cask install keepassx
+cask install adobe-photoshop-lightroom
+cask install atom
+cask install java
+cask install colloquy
+cask install sts
+cask install transmission
+# cask install bittorrent-sync
+cask install skype
