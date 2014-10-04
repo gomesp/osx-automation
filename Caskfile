@@ -9,6 +9,7 @@ install rbenv
 install rbenv-gem-rehash
 install ruby-build
 install git
+install keybase
 
 # Install Cask - http://caskroom.io
 install caskroom/cask/brew-cask

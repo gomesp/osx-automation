@@ -5,5 +5,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # install oh-my-zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
-#install brew formulae and cask applications
+# install brew formulae and cask applications
 brew bundle Caskfile
+
+# check for brew formulae before system binaries
+echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.zshrc
