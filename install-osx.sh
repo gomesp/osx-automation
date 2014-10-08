@@ -10,3 +10,7 @@ brew bundle Caskfile
 
 # check for brew formulae before system binaries
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.zshrc
+
+# Install jEnv
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(jenv init -)"' >> ~/.zshrc

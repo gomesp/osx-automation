@@ -11,6 +11,10 @@ install ruby-build
 install git
 install keybase
 
+# install JDK versioning tool
+tap jenv/jenv
+install jenv
+
 # Install Cask - http://caskroom.io
 install caskroom/cask/brew-cask
 
