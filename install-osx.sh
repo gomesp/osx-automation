@@ -14,3 +14,6 @@ echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.zshrc
 # Install jEnv
 echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(jenv init -)"' >> ~/.zshrc
+
+# Enable maven with jEnv
+# jenv enable-plugin maven
