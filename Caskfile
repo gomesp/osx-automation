@@ -41,3 +41,4 @@ cask install sts
 cask install transmission
 # cask install bittorrent-sync
 cask install skype
+cask install filezilla
