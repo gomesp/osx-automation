@@ -10,6 +10,7 @@ install rbenv-gem-rehash
 install ruby-build
 install git
 install keybase
+install docker
 
 # install JDK versioning tool
 tap jenv/jenv
