@@ -21,26 +21,26 @@ install jenv
 install caskroom/cask/brew-cask
 
 # Virtualization
-cask install vagrant
-cask install virtualbox
+cask install --appdir=/Applications vagrant
+cask install --appdir=/Applications virtualbox
 
 # Applications
-cask install google-chrome
-cask install iterm2
-cask install vlc
-cask install firefox
-cask install sublime-text
-cask install adium
-cask install remote-desktop-connection
-cask install darktable
-cask install dropbox
-cask install keepassx
-cask install adobe-photoshop-lightroom
-cask install atom
-cask install java
-cask install colloquy
-cask install sts
-cask install transmission
-# cask install bittorrent-sync
-cask install skype
-cask install filezilla
+cask install --appdir=/Applications google-chrome
+cask install --appdir=/Applications iterm2
+cask install --appdir=/Applications vlc
+cask install --appdir=/Applications firefox
+cask install --appdir=/Applications sublime-text
+cask install --appdir=/Applications adium
+cask install --appdir=/Applications remote-desktop-connection
+cask install --appdir=/Applications darktable
+cask install --appdir=/Applications dropbox
+cask install --appdir=/Applications keepassx
+cask install --appdir=/Applications adobe-photoshop-lightroom
+cask install --appdir=/Applications atom
+cask install --appdir=/Applications java
+cask install --appdir=/Applications colloquy
+cask install --appdir=/Applications sts
+cask install --appdir=/Applications transmission
+cask install --appdir=/Applications bittorrent-sync
+cask install --appdir=/Applications skype
+cask install --appdir=/Applications filezilla

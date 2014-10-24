@@ -5,6 +5,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # install oh-my-zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
+#persisting location for Caskfiles
+echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.zshrc
+
 # install brew formulae and cask applications
 brew bundle Caskfile
 
@@ -16,12 +19,12 @@ echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(jenv init -)"' >> ~/.zshrc
 
 # Enable maven with jEnv
-# jenv enable-plugin maven
+jenv enable-plugin maven
 
 #install editorconfig plugin to atom
 apm install editorconfig
 
 # chef solo
-gem install knife-solo
-gem install librarian-chef
-gem install berkshelf
+# gem install knife-solo
+# gem install librarian-chef
+# gem install berkshelf
