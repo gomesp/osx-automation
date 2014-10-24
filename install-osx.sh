@@ -24,3 +24,4 @@ apm install editorconfig
 # chef solo
 gem install knife-solo
 gem install librarian-chef
+gem install berkshelf
