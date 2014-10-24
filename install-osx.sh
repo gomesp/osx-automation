@@ -17,3 +17,10 @@ echo 'eval "$(jenv init -)"' >> ~/.zshrc
 
 # Enable maven with jEnv
 # jenv enable-plugin maven
+
+#install editorconfig plugin to atom
+apm install editorconfig
+
+# chef solo
+gem install knife-solo
+gem install librarian-chef
