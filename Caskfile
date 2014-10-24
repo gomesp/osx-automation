@@ -11,6 +11,7 @@ install ruby-build
 install git
 install keybase
 install docker
+install boot2docker
 
 # install JDK versioning tool
 tap jenv/jenv
