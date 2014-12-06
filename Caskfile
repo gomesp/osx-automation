@@ -4,6 +4,7 @@
 install wget
 install node
 install maven
+install gradle
 install openssl
 install rbenv
 install rbenv-gem-rehash
