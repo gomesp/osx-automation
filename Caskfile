@@ -13,6 +13,7 @@ install git
 install keybase
 install docker
 install boot2docker
+install tree
 
 # install JDK versioning tool
 tap jenv/jenv
