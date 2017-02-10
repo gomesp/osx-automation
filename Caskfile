@@ -6,14 +6,13 @@ install node
 install maven
 install gradle
 install openssl
-install rbenv
-install rbenv-gem-rehash
-install ruby-build
 install git
 install keybase
 install docker
-install boot2docker
 install tree
+install pyenv
+install yarn
+
 
 # install JDK versioning tool
 tap jenv/jenv
@@ -31,18 +30,6 @@ cask install --appdir=/Applications google-chrome
 cask install --appdir=/Applications iterm2
 cask install --appdir=/Applications vlc
 cask install --appdir=/Applications firefox
-cask install --appdir=/Applications sublime-text
 cask install --appdir=/Applications adium
-cask install --appdir=/Applications remote-desktop-connection
-cask install --appdir=/Applications darktable
 cask install --appdir=/Applications dropbox
-cask install --appdir=/Applications keepassx
-cask install --appdir=/Applications adobe-photoshop-lightroom
-cask install --appdir=/Applications atom
 cask install --appdir=/Applications java
-cask install --appdir=/Applications colloquy
-cask install --appdir=/Applications sts
-cask install --appdir=/Applications transmission
-cask install --appdir=/Applications bittorrent-sync
-cask install --appdir=/Applications skype
-cask install --appdir=/Applications filezilla
