@@ -24,6 +24,9 @@ brew cask install iterm2
 brew cask install vlc
 brew cask install firefox
 brew cask install slack
+brew cask install daisydisk
+brew cask install minecraft
+brew cask install roblox
 # How to make brew multi-user
 # https://medium.com/@energee/install-brew-for-multiple-users-65af2444df5c
 # create user group brew and add users to it
