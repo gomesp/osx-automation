@@ -1,38 +1,37 @@
+#!/usr/bin/env bash
+
+# Install xcode
 xcode-select --install
+# Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# https://hackernoon.com/personal-macos-workspace-setup-adf61869cd79
-brew install mas
-mas install 121295203466 # Microsoft Remote Desktop 10
-mas install 425264550 # BlackMagic Disk
-mas install 425424353 # The Unarchiver
-brew install awscli
-brew install brew-cask-completion
-brew install cask
-brew install certbot
-brew install git
-brew install pyenv
-brew install tmux
-brew install tor
-brew install tree
-brew install wget
-brew install yarn
-brew install node
-brew install zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting
+
+# Once brew is installed, running all commands under the user `brew` so that it can be used by multiple users on the same computer
+# e.g. sudo -u brew <command>, where command is brew <params>
+
+# Basic tools
+sudo -u brew brew install git cask tree wget brew-cask-completion sstp-client openssl readline
+# Programming languages (latest nodejs, go, python and java)
+sudo -u brew brew install node go python java
+# Java 8 (legacy)
+sudo -u brew brew cask install java8
+# Development tools
+sudo -u brew brew install awscli certbot tmux sqlite jenv pyenv nvm
+# Cask desktop tools
+sudo -u brew brew cask install firefox iterm2 vlc adobe-digital-editions dropbox calibre darktable docker google-chrome minecraft postman roblox slack spectacle tor-browser visual-studio-code
+# ZSH and Oh my ZSH!
+sudo -u brew brew install zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-brew install sstp-client
-brew cask install 1password6
-brew cask install adobe-digital-editions
-brew cask install dropbox
-brew cask install calibre
-brew cask install iterm2
-brew cask install vlc
-brew cask install firefox
-brew cask install slack
-brew cask install daisydisk
-brew cask install minecraft
-brew cask install roblox
-brew cask install postman
-# How to make brew multi-user
+
+# Installing aliases into zsh
+git clone https://github.com/gomesp/dotfiles.git ~/.dotfiles
+echo "source .dotfiles/.alias" >> ~/.zshrc
+echo "source .dotfiles/.pyenv" >> ~/.zshrc
+
+# Manually installed:
+# 1Password
+# daisydisk
+
+# How to make brew multi-user (not working)
 # https://medium.com/@energee/install-brew-for-multiple-users-65af2444df5c
 # create user group brew and add users to it
 # sudo chgrp -R brew $(brew --prefix)/*
